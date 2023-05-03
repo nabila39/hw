@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">assi1</string>
+    <string-array name="Units">
+        <item>cm</item>
+        <item>m</item>
+        <item>km</item>
+        <item>kg</item>
+        <item>gm</item>
+        <item>day</item>
+        <item>h</item>
+        <item>min</item>
+        <item>sec</item>
+        <item>L</item>
+        <item>ml</item>
+    </string-array>
+</resources>
