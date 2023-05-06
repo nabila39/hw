@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:layout_margin="1dp"
     android:layout_marginBottom="15dp"
-    android:layout_marginTop="15dp"
+    android:layout_marginTop="35dp"
     android:background="#99D0D9"
     tools:context=".MainActivity">
 
@@ -48,7 +48,7 @@
          />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -57,18 +57,16 @@
         />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linearLayoutCompat3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_margin="1dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="30dp"
         android:background="#99D0D9"
-        android:gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
         tools:context=".MainActivity">
 
         <TextView
@@ -79,18 +77,20 @@
             android:layout_marginRight="2dp"
             android:fontFamily="@font/courierprimeregular"
             android:text="From:"
-            android:textStyle="bold"
             android:textColor="#3D7C98"
-            android:textSize="32dp" />
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
         <Spinner
             android:id="@+id/sp1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="28dp"
-            android:textColor="#4D6789"
             android:layout_marginTop="15dp"
+            android:outlineSpotShadowColor="@color/black"
             android:scrollbars="vertical"
-            />
+            android:paddingBottom="6dp"
+            android:textColor="#4D6789"
+            android:textSize="28dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -100,22 +100,76 @@
             android:layout_marginRight="2dp"
             android:fontFamily="@font/courierprimeregular"
             android:text="To:"
-            android:textStyle="bold"
             android:textColor="#3D7C98"
-            android:textSize="32dp" />
+            android:textSize="32dp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/sp2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="28dp"
-            android:textColor="#4D6789"
             android:layout_marginTop="15dp"
+            android:paddingBottom="6dp"
             android:scrollbars="vertical"
+            android:textColor="#4D6789"
+            android:textSize="28dp"
 
             />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:textSize="30dp"
+        android:fontFamily="@font/courierprimeregular"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#3D7C98"
+
+        />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="30dp"
+        android:fontFamily="@font/courierprimeregular"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#3D7C98"
+
+        />
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/courierprimeregular"
+        android:textColor="#3D7C98"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="6dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/courierprimeregular"
+        android:textColor="@color/black"
+        android:layout_gravity="left"
+        android:layout_marginLeft="3dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="6dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
 
